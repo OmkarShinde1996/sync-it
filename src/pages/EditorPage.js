@@ -46,7 +46,6 @@ const EditorPage = () => {
 
             //Listening for disconnected
             socketRef.current.on(ACTIONS.DISCONNECTED, ({username, socketId})=>{
-                console.log('Disconnecting');
                 toast.success(`${username} left the room.`)
                 setClients((prev) => {
                     return prev.filter((client) => client.socketId !== socketId)
@@ -73,11 +72,6 @@ const EditorPage = () => {
         }
     }
 
-    // function getSelectedLang(){
-    //     const lang = document.getElementById('dropdown').value
-    //     language = lang
-    //     // console.log(language);
-    // }
 
     function leaveRoom(){
         reactNavigator('/')
