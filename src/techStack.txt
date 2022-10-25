@@ -1,0 +1,22 @@
+Frontend:
+-----------------
+React
+
+Backend:
+-----------------
+Node js
+Express js
+
+Websocket:
+-----------------
+Socket.io
+
+Deployment:
+-----------------
+Render
+
+React router
+------------
+URL routing in react is called as react router
+
+Connect this app to Database
